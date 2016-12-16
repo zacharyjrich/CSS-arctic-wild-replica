@@ -18,7 +18,7 @@ body {
   background-size: cover;
   padding: 0 6em; }
   .main-area .navbar {
-    height: 15em;
+    height: 12em;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -27,9 +27,33 @@ body {
       list-style: none; }
       .main-area .navbar .nav-links li {
         padding-left: 2em; }
+        .main-area .navbar .nav-links li:hover {
+          color: orange;
+          cursor: pointer; }
   .main-area .hero-area {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .main-area .hero-area h1 {
+      font-size: 8em;
+      margin: 0; }
+    .main-area .hero-area .bar {
+      height: .3em;
+      width: 20em;
+      background-color: white;
+      margin-top: 1em; }
+    .main-area .hero-area button {
+      margin-top: 12em;
+      border-style: none;
+      background-color: orange;
+      color: white;
+      border-radius: 8px;
+      padding: 1.5em;
+      font-size: 14px;
+      transition: all 500ms ease-in-out; }
+      .main-area .hero-area button:hover {
+        cursor: pointer;
+        background-color: red;
+        transform: scale(1.1); }
 
 /*# sourceMappingURL=styles.css.map */
