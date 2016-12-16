@@ -18,17 +18,17 @@ body {
   background: url("/img/hero-slide.jpg") no-repeat center;
   background-size: cover;
   padding: 0 6em; }
-  .main-area .navbar {
+  .main-area .navbar1 {
     height: 12em;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .main-area .navbar .nav-links {
+    .main-area .navbar1 ul {
       display: flex;
       list-style: none; }
-      .main-area .navbar .nav-links li {
+      .main-area .navbar1 ul li {
         padding-left: 2em; }
-        .main-area .navbar .nav-links li:hover {
+        .main-area .navbar1 ul li:hover {
           color: orange;
           cursor: pointer; }
   .main-area .hero-area {
@@ -56,6 +56,20 @@ body {
         cursor: pointer;
         background-color: red;
         transform: scale(1.1); }
+
+.navbar2 {
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: gray;
+  padding: 0 6em; }
+  .navbar2 ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0; }
+    .navbar2 ul li {
+      padding-right: 1em; }
 
 .second-area {
   display: flex;
