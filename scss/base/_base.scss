@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  @extend %border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $stack-sans;
+  color: $white;
+  p {
+    margin: 0;
+  }
+}

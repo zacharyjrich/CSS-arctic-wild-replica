@@ -1,50 +1,11 @@
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  // display: flex;
-  // flex-direction: column;
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  p {
-    margin: 0;
-  }
-}
 
 .main-area {
   min-height: 100vh;
   width: auto;
   display: flex;
   flex-direction: column;
-  background: url('/img/hero-slide.jpg') no-repeat center;
-  background-size: cover;
+  @include background(url('#{$path-img}/hero-slide.jpg'));
   padding: 0 6em;
-
-  .navbar1 {
-    height: 12em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    ul {
-      display: flex;
-      list-style: none;
-
-      li {
-        padding-left: 2em;
-        &:hover {
-          color: orange;
-          cursor: pointer;
-        }
-      }
-    }
-  }
 
   .hero-area {
     display: flex;
@@ -62,40 +23,24 @@ body {
       background-color: white;
       margin-top: 1em;
     }
-
-    button {
-      margin-top: 12em;
-      border-style: none;
-      background-color: orange;
-      color: white;
-      border-radius: 8px;
-      padding: 1.5em;
-      font-size: 14px;
-      transition: all 500ms ease-in-out;
-
-      &:hover {
-        cursor: pointer;
-        background-color: darkorange;
-        transform: scale(1.1);
-      }
-    }
   }
 }
 
 .navbar2 {
   height: 5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: gray;
+  @extend %nav-flex;
+  background: $gray;
   padding: 0 6em;
 
   ul {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
+    @extend %ul-spec;
+
     li {
       padding-right: 1em;
+      &:hover {
+        color: $orange;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -114,8 +59,7 @@ body {
       flex-direction: column;
       flex-basis: 50%;
       justify-content: flex-end;
-      background: url('/img/raft.jpg') no-repeat center;
-      background-size: cover;
+      @include background(url('#{$path-img}/raft.jpg'));
 
       .icon {
         left: 45%;
@@ -128,8 +72,8 @@ body {
       flex-direction: column;
       flex-basis: 25%;
       justify-content: flex-end;
-      background: url('/img/basecamp.jpg') no-repeat center;
-      background-size: cover;
+      @include background(url('#{$path-img}/basecamp.jpg'));
+
     }
     .backpacking {
       padding: 3em;
@@ -138,8 +82,7 @@ body {
       flex-direction: column;
       flex-basis: 25%;
       justify-content: flex-end;
-      background: url('/img/backpacking.jpg') no-repeat center;
-      background-size: cover;
+      @include background(url('#{$path-img}/backpacking.jpg'));
     }
   }
   .row2 {
@@ -153,8 +96,7 @@ body {
       flex-direction: column;
       flex-basis: 25%;
       justify-content: flex-end;
-      background: url('/img/canoe.jpg') no-repeat center;
-      background-size: cover;
+      @include background(url('#{$path-img}/canoe.jpg'));
     }
     .photography {
       padding: 3em;
@@ -163,8 +105,7 @@ body {
       flex-direction: column;
       flex-basis: 25%;
       justify-content: flex-end;
-      background: url('/img/taking-photos.jpg') no-repeat center;
-      background-size: cover;
+      @include background(url('#{$path-img}/taking-photos.jpg'));
     }
     .custom {
       padding: 3em;
@@ -173,8 +114,7 @@ body {
       flex-direction: column;
       flex-basis: 50%;
       justify-content: flex-end;
-      background: url('/img/custom.jpg') no-repeat center;
-      background-size: cover;
+      @include background(url('#{$path-img}/custom.jpg'));
 
       .icon {
         left: 45%;
@@ -189,7 +129,7 @@ body {
   .small-break {
     height: .2em;
     width: 2.5em;
-    background-color: orange;
+    background-color: $orange;
     margin-bottom: .8em;
   }
 }

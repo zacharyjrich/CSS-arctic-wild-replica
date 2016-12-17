@@ -1,0 +1,19 @@
+
+//Header
+
+.navbar1 {
+  height: 12em;
+  @extend %nav-flex;
+
+  ul {
+    @extend %ul-spec;
+
+    li {
+      padding-left: 2em;
+      &:hover {
+        color: $orange;
+        cursor: pointer;
+      }
+    }
+  }
+}
