@@ -24,12 +24,25 @@
   position: relative;
   justify-content: flex-end; }
 
+.second-area .row1, .second-area .row2 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vh;
+  width: auto; }
+  @media (max-width: 975px) {
+    .second-area .row1, .second-area .row2 {
+      height: 100vh; } }
+
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
   color: #fff; }
   body p {
+    font-weight: bold;
     margin: 0; }
+  @media (max-width: 975px) {
+    body li {
+      font-size: 80%; } }
 
 .main-area {
   min-height: 100vh;
@@ -37,6 +50,9 @@ body {
   background: url("../img/hero-slide.jpg") no-repeat center;
   background-size: cover;
   padding: 0 6em; }
+  @media (max-width: 975px) {
+    .main-area {
+      padding: 0 2em; } }
   .main-area .title {
     display: flex;
     align-items: center; }
@@ -47,47 +63,62 @@ body {
       margin-bottom: 1em; }
     .main-area .hero-area h1 {
       font-family: "Cinzel", serif;
-      font-size: 8em;
+      font-size: 7em;
       margin: 0; }
+      @media (max-width: 975px) {
+        .main-area .hero-area h1 {
+          font-size: 5em; } }
     .main-area .hero-area .bar {
       height: .3em;
       width: 18em;
       background-color: white; }
 
-.second-area .row1 {
-  display: flex;
-  height: 50vh; }
-  .second-area .row1 .rafting {
-    flex-basis: 50%;
-    background: url("../img/raft.jpg") no-repeat center;
-    background-size: cover; }
-    .second-area .row1 .rafting .icon {
-      left: 45%; }
-  .second-area .row1 .basecamp {
-    flex-basis: 25%;
-    background: url("../img/basecamp.jpg") no-repeat center;
-    background-size: cover; }
-  .second-area .row1 .backpacking {
-    flex-basis: 25%;
-    background: url("../img/backpacking.jpg") no-repeat center;
-    background-size: cover; }
-.second-area .row2 {
-  display: flex;
-  height: 50vh; }
-  .second-area .row2 .canoe {
-    flex-basis: 25%;
-    background: url("../img/canoe.jpg") no-repeat center;
-    background-size: cover; }
-  .second-area .row2 .photography {
-    flex-basis: 25%;
-    background: url("../img/taking-photos.jpg") no-repeat center;
-    background-size: cover; }
-  .second-area .row2 .custom {
-    flex-basis: 50%;
-    background: url("../img/custom.jpg") no-repeat center;
-    background-size: cover; }
-    .second-area .row2 .custom .icon {
-      left: 45%; }
+.second-area .row1 .rafting {
+  flex-basis: 50%;
+  background: url("../img/raft.jpg") no-repeat center;
+  background-size: cover; }
+  @media (max-width: 975px) {
+    .second-area .row1 .rafting {
+      flex-basis: 100%; } }
+  .second-area .row1 .rafting .icon {
+    left: 45%; }
+.second-area .row1 .basecamp {
+  flex-basis: 25%;
+  background: url("../img/basecamp.jpg") no-repeat center;
+  background-size: cover; }
+  @media (max-width: 975px) {
+    .second-area .row1 .basecamp {
+      flex-basis: 50%; } }
+.second-area .row1 .backpacking {
+  flex-basis: 25%;
+  background: url("../img/backpacking.jpg") no-repeat center;
+  background-size: cover; }
+  @media (max-width: 975px) {
+    .second-area .row1 .backpacking {
+      flex-basis: 50%; } }
+.second-area .row2 .canoe {
+  flex-basis: 25%;
+  background: url("../img/canoe.jpg") no-repeat center;
+  background-size: cover; }
+  @media (max-width: 975px) {
+    .second-area .row2 .canoe {
+      flex-basis: 50%; } }
+.second-area .row2 .photography {
+  flex-basis: 25%;
+  background: url("../img/taking-photos.jpg") no-repeat center;
+  background-size: cover; }
+  @media (max-width: 975px) {
+    .second-area .row2 .photography {
+      flex-basis: 50%; } }
+.second-area .row2 .custom {
+  flex-basis: 50%;
+  background: url("../img/custom.jpg") no-repeat center;
+  background-size: cover; }
+  @media (max-width: 975px) {
+    .second-area .row2 .custom {
+      flex-basis: 100%; } }
+  .second-area .row2 .custom .icon {
+    left: 45%; }
 
 .inner-title .small-break {
   height: .2em;
@@ -136,6 +167,9 @@ button {
     font-family: "Cinzel", serif; }
   .navbar1 ul li {
     padding-left: 2em; }
+    @media (max-width: 975px) {
+      .navbar1 ul li {
+        font-size: 80%; } }
     .navbar1 ul li:hover {
       color: #FF8C00;
       cursor: pointer; }

@@ -18,6 +18,10 @@
 
     li {
       padding-left: 2em;
+      @media #{$med-screen} {
+        font-size: 80%;
+      }
+
       &:hover {
         color: $orange;
         cursor: pointer;

@@ -7,6 +7,9 @@
   @extend %flex-column;
   @include background(url('#{$path-img}/hero-slide.jpg'));
   padding: 0 6em;
+  @media #{$med-screen} {
+    padding: 0 2em;
+  }
 
   .title {
     display: flex;
@@ -24,8 +27,11 @@
 
     h1 {
       font-family: $stack-serif;
-      font-size: 8em;
+      font-size: 7em;
       margin: 0;
+      @media #{$med-screen} {
+        font-size: 5em;
+      }
     }
 
     .bar {
@@ -42,13 +48,15 @@
   @extend %flex-column;
 
   .row1 {
-    display: flex;
-    height: 50vh;
+    @extend %row-spec;
 
     .rafting {
       flex-basis: 50%;
       @extend %panel-spec;
       @include background(url('#{$path-img}/raft.jpg'));
+      @media #{$med-screen} {
+        flex-basis: 100%;
+      }
 
       .icon {
         left: 45%;
@@ -59,35 +67,49 @@
       flex-basis: 25%;
       @extend %panel-spec;
       @include background(url('#{$path-img}/basecamp.jpg'));
+      @media #{$med-screen} {
+        flex-basis: 50%;
+      }
     }
 
     .backpacking {
       flex-basis: 25%;
       @extend %panel-spec;
       @include background(url('#{$path-img}/backpacking.jpg'));
+      @media #{$med-screen} {
+        flex-basis: 50%;
+      }
     }
   }
 
   .row2 {
-    display: flex;
-    height: 50vh;
+    @extend %row-spec;
 
     .canoe {
       flex-basis: 25%;
       @extend %panel-spec;
       @include background(url('#{$path-img}/canoe.jpg'));
+      @media #{$med-screen} {
+        flex-basis: 50%;
+      }
     }
 
     .photography {
       flex-basis: 25%;
       @extend %panel-spec;
       @include background(url('#{$path-img}/taking-photos.jpg'));
+      @media #{$med-screen} {
+        flex-basis: 50%;
+      }
     }
 
     .custom {
       flex-basis: 50%;
       @extend %panel-spec;
       @include background(url('#{$path-img}/custom.jpg'));
+      @media #{$med-screen} {
+        flex-basis: 100%;
+      }
 
       .icon {
         left: 45%;

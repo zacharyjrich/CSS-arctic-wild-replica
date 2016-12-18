@@ -27,3 +27,13 @@
   justify-content: flex-end;
   @extend %flex-column;
 }
+
+%row-spec {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vh;
+  width: auto;
+  @media #{$med-screen} {
+    height: 100vh;
+  }
+}
