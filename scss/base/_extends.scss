@@ -15,3 +15,15 @@
   list-style: none;
   padding-left: 0;
 }
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%panel-spec {
+  padding: 3em;
+  position: relative;
+  justify-content: flex-end;
+  @extend %flex-column;
+}

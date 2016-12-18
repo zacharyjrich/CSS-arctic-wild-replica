@@ -5,15 +5,24 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.navbar2, .navbar1 {
+.navbar1, .navbar2 {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-.navbar2 ul, .navbar1 ul {
+.navbar1 ul, .navbar2 ul {
   display: flex;
   list-style: none;
   padding-left: 0; }
+
+.second-area .row1 .rafting, .second-area .row1 .basecamp, .second-area .row1 .backpacking, .second-area .row2 .canoe, .second-area .row2 .photography, .second-area .row2 .custom, .main-area, .main-area .hero-area, .second-area, .inner-title {
+  display: flex;
+  flex-direction: column; }
+
+.second-area .row1 .rafting, .second-area .row1 .basecamp, .second-area .row1 .backpacking, .second-area .row2 .canoe, .second-area .row2 .photography, .second-area .row2 .custom {
+  padding: 3em;
+  position: relative;
+  justify-content: flex-end; }
 
 body {
   margin: 0;
@@ -25,110 +34,80 @@ body {
 .main-area {
   min-height: 100vh;
   width: auto;
-  display: flex;
-  flex-direction: column;
   background: url("../img/hero-slide.jpg") no-repeat center;
   background-size: cover;
   padding: 0 6em; }
-  .main-area .hero-area {
+  .main-area .title {
     display: flex;
-    flex-direction: column;
     align-items: center; }
+  .main-area .hero-area {
+    align-items: center; }
+    .main-area .hero-area img {
+      height: 3em;
+      margin-bottom: 1em; }
     .main-area .hero-area h1 {
+      font-family: "Cinzel", serif;
       font-size: 8em;
       margin: 0; }
     .main-area .hero-area .bar {
       height: .3em;
       width: 18em;
-      background-color: white;
-      margin-top: 1em; }
+      background-color: white; }
 
-.navbar2 {
-  height: 5em;
-  background: #666666;
-  padding: 0 6em; }
-  .navbar2 ul li {
-    padding-right: 1em; }
-    .navbar2 ul li:hover {
-      color: #FF8C00;
-      cursor: pointer; }
-
-.second-area {
+.second-area .row1 {
   display: flex;
-  flex-direction: column; }
-  .second-area .row1 {
-    display: flex;
-    height: 50vh; }
-    .second-area .row1 .rafting {
-      padding: 3em;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 50%;
-      justify-content: flex-end;
-      background: url("../img/raft.jpg") no-repeat center;
-      background-size: cover; }
-      .second-area .row1 .rafting .icon {
-        left: 45%; }
-    .second-area .row1 .basecamp {
-      padding: 3em;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 25%;
-      justify-content: flex-end;
-      background: url("../img/basecamp.jpg") no-repeat center;
-      background-size: cover; }
-    .second-area .row1 .backpacking {
-      padding: 3em;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 25%;
-      justify-content: flex-end;
-      background: url("../img/backpacking.jpg") no-repeat center;
-      background-size: cover; }
-  .second-area .row2 {
-    display: flex;
-    height: 50vh; }
-    .second-area .row2 .canoe {
-      padding: 3em;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 25%;
-      justify-content: flex-end;
-      background: url("../img/canoe.jpg") no-repeat center;
-      background-size: cover; }
-    .second-area .row2 .photography {
-      padding: 3em;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 25%;
-      justify-content: flex-end;
-      background: url("../img/taking-photos.jpg") no-repeat center;
-      background-size: cover; }
-    .second-area .row2 .custom {
-      padding: 3em;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 50%;
-      justify-content: flex-end;
-      background: url("../img/custom.jpg") no-repeat center;
-      background-size: cover; }
-      .second-area .row2 .custom .icon {
-        left: 45%; }
-
-.inner-title {
+  height: 50vh; }
+  .second-area .row1 .rafting {
+    flex-basis: 50%;
+    background: url("../img/raft.jpg") no-repeat center;
+    background-size: cover; }
+    .second-area .row1 .rafting .icon {
+      left: 45%; }
+  .second-area .row1 .basecamp {
+    flex-basis: 25%;
+    background: url("../img/basecamp.jpg") no-repeat center;
+    background-size: cover; }
+  .second-area .row1 .backpacking {
+    flex-basis: 25%;
+    background: url("../img/backpacking.jpg") no-repeat center;
+    background-size: cover; }
+.second-area .row2 {
   display: flex;
-  flex-direction: column; }
-  .inner-title .small-break {
-    height: .2em;
-    width: 2.5em;
-    background-color: #FF8C00;
-    margin-bottom: .8em; }
+  height: 50vh; }
+  .second-area .row2 .canoe {
+    flex-basis: 25%;
+    background: url("../img/canoe.jpg") no-repeat center;
+    background-size: cover; }
+  .second-area .row2 .photography {
+    flex-basis: 25%;
+    background: url("../img/taking-photos.jpg") no-repeat center;
+    background-size: cover; }
+  .second-area .row2 .custom {
+    flex-basis: 50%;
+    background: url("../img/custom.jpg") no-repeat center;
+    background-size: cover; }
+    .second-area .row2 .custom .icon {
+      left: 45%; }
+
+.inner-title .small-break {
+  height: .2em;
+  width: 2.5em;
+  background-color: #FF8C00;
+  margin-bottom: .8em; }
+
+button {
+  margin-top: 10em;
+  border-style: none;
+  background-color: #FF8C00;
+  color: white;
+  border-radius: .5em;
+  padding: 1.5em;
+  font-size: 14px;
+  transition: all 200ms ease-in-out; }
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 140, 0, 0.8);
+    transform: scale(1.1); }
 
 .icon {
   height: 5em;
@@ -142,45 +121,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 500ms ease-in-out; }
+  transition: all 200ms ease-in-out; }
   .icon:hover {
     cursor: pointer;
     transform: scale(1.3); }
   .icon img {
     height: 2.5em; }
 
-button {
-  margin-top: 12em;
-  border-style: none;
-  background-color: #FF8C00;
-  color: white;
-  border-radius: .5em;
-  padding: 1.5em;
-  font-size: 14px;
-  transition: all 500ms ease-in-out; }
-  button:hover {
-    cursor: pointer;
-    background-color: rgba(255, 140, 0, 0.8);
-    transform: scale(1.1); }
-
 .navbar1 {
   height: 12em; }
+  .navbar1 .fa {
+    margin-right: .3em; }
+  .navbar1 h2 {
+    font-family: "Cinzel", serif; }
   .navbar1 ul li {
     padding-left: 2em; }
     .navbar1 ul li:hover {
       color: #FF8C00;
       cursor: pointer; }
 
-.footer {
-  border-top: 0.1em solid #fff;
-  list-style: none;
-  padding: 1.5em 0 0;
-  margin-bottom: 0;
-  display: flex;
-  justify-content: space-between; }
-  .footer li {
-    display: inline; }
-  .footer .fa {
-    padding-right: 1em; }
+.navbar2 {
+  height: 5em;
+  background: #292727;
+  padding: 0 6em; }
+  .navbar2 .search {
+    display: flex; }
+    .navbar2 .search p {
+      padding-right: 1em; }
+  .navbar2 ul li {
+    padding-right: 2em; }
+    .navbar2 ul li:last-child {
+      color: #FF8C00;
+      border-left: .5px solid gray;
+      padding-left: 2em; }
+    .navbar2 ul li:hover {
+      color: #FF8C00;
+      cursor: pointer; }
 
 /*# sourceMappingURL=application.css.map */
