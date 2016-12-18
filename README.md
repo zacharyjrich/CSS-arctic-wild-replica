@@ -18,7 +18,9 @@ This project will create a replica of the Arctic Wild website utilizing flexbox 
 
 ## Setup/Installation Requirements
 
-1) Clone this repository https://github.com/zacharyjrich/CSS-arctic-wild-replica
+1) Check it out here https://zacharyjrich.github.io/CSS-arctic-wild-replica/
+
+2) Or clone this repository https://github.com/zacharyjrich/CSS-arctic-wild-replica
 
 ## Known Bugs
 
