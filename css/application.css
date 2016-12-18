@@ -186,7 +186,7 @@ button {
     padding-right: 2em; }
     .navbar2 ul li:last-child {
       color: #FF8C00;
-      border-left: .5px solid gray;
+      border-left: 0.5px solid #aaa5a5;
       padding-left: 2em; }
     .navbar2 ul li:hover {
       color: #FF8C00;
