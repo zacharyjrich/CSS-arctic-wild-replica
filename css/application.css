@@ -32,6 +32,9 @@
   @media (max-width: 975px) {
     .second-area .row1, .second-area .row2 {
       height: 100vh; } }
+  @media (max-width: 550px) {
+    .second-area .row1, .second-area .row2 {
+      height: 100vh; } }
 
 body {
   margin: 0;
@@ -64,6 +67,7 @@ body {
     .main-area .hero-area h1 {
       font-family: "Cinzel", serif;
       font-size: 7em;
+      text-align: center;
       margin: 0; }
       @media (max-width: 975px) {
         .main-area .hero-area h1 {
@@ -80,6 +84,9 @@ body {
   @media (max-width: 975px) {
     .second-area .row1 .rafting {
       flex-basis: 100%; } }
+  @media (max-width: 550px) {
+    .second-area .row1 .rafting {
+      flex-basis: 100%; } }
   .second-area .row1 .rafting .icon {
     left: 45%; }
 .second-area .row1 .basecamp {
@@ -89,6 +96,9 @@ body {
   @media (max-width: 975px) {
     .second-area .row1 .basecamp {
       flex-basis: 50%; } }
+  @media (max-width: 550px) {
+    .second-area .row1 .basecamp {
+      flex-basis: 100%; } }
 .second-area .row1 .backpacking {
   flex-basis: 25%;
   background: url("../img/backpacking.jpg") no-repeat center;
@@ -96,6 +106,9 @@ body {
   @media (max-width: 975px) {
     .second-area .row1 .backpacking {
       flex-basis: 50%; } }
+  @media (max-width: 550px) {
+    .second-area .row1 .backpacking {
+      flex-basis: 100%; } }
 .second-area .row2 .canoe {
   flex-basis: 25%;
   background: url("../img/canoe.jpg") no-repeat center;
@@ -103,6 +116,9 @@ body {
   @media (max-width: 975px) {
     .second-area .row2 .canoe {
       flex-basis: 50%; } }
+  @media (max-width: 550px) {
+    .second-area .row2 .canoe {
+      flex-basis: 100%; } }
 .second-area .row2 .photography {
   flex-basis: 25%;
   background: url("../img/taking-photos.jpg") no-repeat center;
@@ -110,6 +126,9 @@ body {
   @media (max-width: 975px) {
     .second-area .row2 .photography {
       flex-basis: 50%; } }
+  @media (max-width: 550px) {
+    .second-area .row2 .photography {
+      flex-basis: 100%; } }
 .second-area .row2 .custom {
   flex-basis: 50%;
   background: url("../img/custom.jpg") no-repeat center;
@@ -135,6 +154,13 @@ button {
   padding: 1.5em;
   font-size: 14px;
   transition: all 200ms ease-in-out; }
+  @media (max-width: 975px) {
+    button {
+      transform: scale(0.8);
+      margin-top: 8em; } }
+  @media (max-width: 550px) {
+    button {
+      margin-top: 5em; } }
   button:hover {
     cursor: pointer;
     background-color: rgba(255, 140, 0, 0.8);
@@ -153,6 +179,9 @@ button {
   align-items: center;
   justify-content: center;
   transition: all 200ms ease-in-out; }
+  @media (max-width: 550px) {
+    .icon {
+      display: none; } }
   .icon:hover {
     cursor: pointer;
     transform: scale(1.3); }
@@ -161,15 +190,23 @@ button {
 
 .navbar1 {
   height: 12em; }
-  .navbar1 .fa {
+  .navbar1 #paw-icon {
     margin-right: .3em; }
   .navbar1 h2 {
     font-family: "Cinzel", serif; }
+  .navbar1 ul #menu-icon1 {
+    display: none; }
+    @media (max-width: 975px) {
+      .navbar1 ul #menu-icon1 {
+        display: block; } }
+    .navbar1 ul #menu-icon1:hover {
+      color: #FF8C00;
+      cursor: pointer; }
   .navbar1 ul li {
     padding-left: 2em; }
     @media (max-width: 975px) {
       .navbar1 ul li {
-        font-size: 80%; } }
+        display: none; } }
     .navbar1 ul li:hover {
       color: #FF8C00;
       cursor: pointer; }
@@ -182,8 +219,19 @@ button {
     display: flex; }
     .navbar2 .search p {
       padding-right: 1em; }
+  .navbar2 ul #menu-icon2 {
+    display: none; }
+    @media (max-width: 550px) {
+      .navbar2 ul #menu-icon2 {
+        display: block; } }
+    .navbar2 ul #menu-icon2:hover {
+      color: #FF8C00;
+      cursor: pointer; }
   .navbar2 ul li {
     padding-right: 2em; }
+    @media (max-width: 550px) {
+      .navbar2 ul li {
+        display: none; } }
     .navbar2 ul li:last-child {
       color: #FF8C00;
       border-left: 0.5px solid #aaa5a5;

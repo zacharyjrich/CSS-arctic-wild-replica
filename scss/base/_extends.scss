@@ -36,4 +36,7 @@
   @media #{$med-screen} {
     height: 100vh;
   }
+  @media #{$sm-screen} {
+    height: 100vh;
+  }
 }

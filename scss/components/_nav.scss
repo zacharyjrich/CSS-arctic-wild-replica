@@ -5,7 +5,7 @@
   height: 12em;
   @extend %nav-flex;
 
-  .fa {
+  #paw-icon {
     margin-right: .3em;
   }
 
@@ -15,11 +15,21 @@
 
   ul {
     @extend %ul-spec;
+    #menu-icon1 {
+      display: none;
+      @media #{$med-screen} {
+        display: block;
+      }
+      &:hover {
+        color: $orange;
+        cursor: pointer;
+      }
+    }
 
     li {
       padding-left: 2em;
       @media #{$med-screen} {
-        font-size: 80%;
+        display: none;
       }
 
       &:hover {
@@ -46,9 +56,22 @@
 
   ul {
     @extend %ul-spec;
+    #menu-icon2 {
+      display: none;
+      @media #{$sm-screen} {
+        display: block;
+      }
+      &:hover {
+        color: $orange;
+        cursor: pointer;
+      }
+    }
 
     li {
       padding-right: 2em;
+      @media #{$sm-screen} {
+        display: none;
+      }
 
       &:last-child {
         color: $orange;
