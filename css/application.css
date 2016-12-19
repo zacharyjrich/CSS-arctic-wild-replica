@@ -20,7 +20,7 @@
   flex-direction: column; }
 
 .second-area .row1 .rafting, .second-area .row1 .basecamp, .second-area .row1 .backpacking, .second-area .row2 .canoe, .second-area .row2 .photography, .second-area .row2 .custom {
-  padding: 3em;
+  padding: 2em;
   position: relative;
   justify-content: flex-end; }
 
@@ -175,8 +175,8 @@ button {
   width: 5em;
   padding: 8px;
   position: absolute;
-  top: 38%;
-  left: 38%;
+  top: 42%;
+  left: 42%;
   background-color: rgba(49, 42, 42, 0.7);
   border-radius: 50%;
   display: flex;
