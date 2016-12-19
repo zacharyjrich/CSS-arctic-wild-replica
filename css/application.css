@@ -36,6 +36,10 @@
     .second-area .row1, .second-area .row2 {
       height: 100vh; } }
 
+.navbar1 ul #menu-icon1:hover, .navbar1 ul li:hover, .navbar2 ul #menu-icon2:hover, .navbar2 ul li:hover {
+  color: #FF8C00;
+  cursor: pointer; }
+
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -199,22 +203,19 @@ button {
     @media (max-width: 975px) {
       .navbar1 ul #menu-icon1 {
         display: block; } }
-    .navbar1 ul #menu-icon1:hover {
-      color: #FF8C00;
-      cursor: pointer; }
   .navbar1 ul li {
     padding-left: 2em; }
     @media (max-width: 975px) {
       .navbar1 ul li {
         display: none; } }
-    .navbar1 ul li:hover {
-      color: #FF8C00;
-      cursor: pointer; }
 
 .navbar2 {
   height: 5em;
   background: #292727;
   padding: 0 6em; }
+  @media (max-width: 975px) {
+    .navbar2 {
+      padding: 0 2em; } }
   .navbar2 .search {
     display: flex; }
     .navbar2 .search p {
@@ -224,9 +225,6 @@ button {
     @media (max-width: 550px) {
       .navbar2 ul #menu-icon2 {
         display: block; } }
-    .navbar2 ul #menu-icon2:hover {
-      color: #FF8C00;
-      cursor: pointer; }
   .navbar2 ul li {
     padding-right: 2em; }
     @media (max-width: 550px) {
@@ -236,8 +234,5 @@ button {
       color: #FF8C00;
       border-left: 0.5px solid #aaa5a5;
       padding-left: 2em; }
-    .navbar2 ul li:hover {
-      color: #FF8C00;
-      cursor: pointer; }
 
 /*# sourceMappingURL=application.css.map */

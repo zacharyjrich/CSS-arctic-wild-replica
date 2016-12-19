@@ -21,8 +21,7 @@
         display: block;
       }
       &:hover {
-        color: $orange;
-        cursor: pointer;
+        @extend %hover-spec;
       }
     }
 
@@ -31,10 +30,8 @@
       @media #{$med-screen} {
         display: none;
       }
-
       &:hover {
-        color: $orange;
-        cursor: pointer;
+        @extend %hover-spec;
       }
     }
   }
@@ -45,6 +42,9 @@
   @extend %nav-flex;
   background: $gray;
   padding: 0 6em;
+  @media #{$med-screen} {
+    padding: 0 2em;
+  }
 
   .search {
     display: flex;
@@ -62,8 +62,7 @@
         display: block;
       }
       &:hover {
-        color: $orange;
-        cursor: pointer;
+        @extend %hover-spec;
       }
     }
 
@@ -80,8 +79,7 @@
       }
 
       &:hover {
-        color: $orange;
-        cursor: pointer;
+        @extend %hover-spec;
       }
     }
   }
